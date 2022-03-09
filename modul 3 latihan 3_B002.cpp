@@ -1,6 +1,7 @@
+#include <iostream>
 #include <stdio.h>
-
 #include <conio.h>
+using namespace std;
 
 int main()
 
@@ -8,14 +9,10 @@ int main()
 
     int i,j,temp,tempmin, max,min;
     max = temp = tempmin = 0;
-
-    int arr[10];
-
+    int arr[5];
     min = arr[0];
-
-    printf("Enter up to 10 numbers:\n");
-
-    for(i=0;i<=10;i++)
+    printf("Enter up to 5 numbers:\n");
+    for(i=0;i<=5;i++)
     {
 
         scanf("%d",&arr[i]);
@@ -28,7 +25,7 @@ int main()
 
     ptr2 = arr;
 
-    for(i=1;i<=10;i++)
+    for(i=1;i<=5;i++)
     {
 
       if(max <= *ptr1)
@@ -47,7 +44,7 @@ int main()
    }
 
     printf("MAX=%d\n",max);
-
+	cout<<"alamat nilai adalah ;"<<&i<<endl;
 
     return 0;
 
